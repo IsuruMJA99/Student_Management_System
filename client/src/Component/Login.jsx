@@ -18,7 +18,7 @@ const Login = () => {
     })
       .then((response) => {
         if(response.data.status){
-            navigate('/home')
+            navigate('/')
         }
       })
       .catch((err) => {
