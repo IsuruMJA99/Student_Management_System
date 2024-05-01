@@ -28,12 +28,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="flex w-full max-w-4xl border border-gray-700 rounded-lg shadow-md bg-opacity-75">
+    <div className="flex items-center justify-center h-screen">
+      <div className="flex w-full max-w-4xl bg-opacity-75 border border-gray-700 rounded-lg shadow-md">
         <img
           src={Img01}
           alt="Featured"
-          className="w-1/2 object-cover rounded-l-lg"
+          className="object-cover w-1/2 rounded-l-lg"
         />
         <form className="w-1/2 p-8" onSubmit={handleSubmit}>
           <h2 className="text-center text-gray-700 font-bold text-[25px]">
@@ -84,11 +84,11 @@ const Signup = () => {
 
           <button
             type="submit"
-            className="w-full py-2 bg-green-500 text-white rounded-lg cursor-pointer hover:bg-green-700"
+            className="w-full py-2 text-white bg-green-500 rounded-lg cursor-pointer hover:bg-green-700"
           >
             Sign Up
           </button>
-          <p class="text-center  mt-10">Already Have an Account.. <Link to="/login" class="text-blue-500">Login</Link></p>
+          <p className="mt-10 text-center">Already Have an Account.. <Link to="/login" className="text-blue-500">Login</Link></p>
      
         </form>
       </div>
