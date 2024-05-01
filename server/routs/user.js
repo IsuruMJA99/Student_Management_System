@@ -1,6 +1,6 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
+import jwt  from 'jsonwebtoken';
 import { User } from '../models/User.js';
 import nodemailer from 'nodemailer'
 
@@ -99,6 +99,30 @@ router.post('/forgot-password', async (req, res) => {
         } catch(err){
             return res.json("invalid token")
             } 
-        })
+        });
+
+        const verifyUser = async (req, res, next) => {
+            try {
+                const token = req.cookies.token;
+                if (!token) {
+                    return res.json({ status: false, message: "no token" });
+                }
+                const decoded = await jwt.verify(token, process.env.KEY);
+                next();
+            } catch (err) {
+                return res.json(err);
+            }
+        };
+
+    router.get('/verify',verifyUser, (req,res)=>{
+            return res.json({status: true, message: "autherized"})
+    });
+
+    router.get('/logout', (req,res)=>{
+        res.clearCookie('token')
+        return res.json({status: true})
+});
+
+
 
 export { router as UserRouter };
