@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Axios from "axios";
 import {Link, useNavigate} from "react-router-dom";
 import Img01 from "./images/regisImg.jpg";
+import Img02 from "./images/loginImg2.jpg";
 
 const Signup = () => {
   const [username, setUsername] = useState(" ");
@@ -28,8 +29,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="flex w-full max-w-4xl bg-opacity-75 border border-gray-700 rounded-lg shadow-md">
+    <div className="flex items-center justify-center h-screen bg-gray-200" >   
+    {/* style={{ backgroundImage: `url(${Img02})`, backgroundSize: "cover" }} */}
+      
+      <div className="flex w-full max-w-4xl bg-opacity-25 border border-gray-700 rounded-lg shadow-md">
         <img
           src={Img01}
           alt="Featured"
