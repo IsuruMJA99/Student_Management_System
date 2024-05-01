@@ -4,6 +4,7 @@ import Login from './Component/Login'
 import Home from './Component/Home'
 import ForgotPassword from './Component/ForgotPassword'
 import ResetPassword from './Component/ResetPassword'
+import Dashboard from './Component/Dashboard'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <Route exact path= "/login" element={<Login/>} ></Route>
       <Route exact path= "/forgotPassword" element={<ForgotPassword/>} ></Route>
       <Route exact path= "/resetPassword/:token" element={<ResetPassword/>} ></Route>
+      <Route exact path= "/dashboard" element={<Dashboard/>} ></Route>
+      
       
       
     </Routes>
