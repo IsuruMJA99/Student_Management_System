@@ -5,7 +5,6 @@ import Home from './Component/Home'
 import ForgotPassword from './Component/ForgotPassword'
 import ResetPassword from './Component/ResetPassword'
 import Dashboard from './Component/Dashboard'
-import Navbar from './Component/Navbar'
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <Route exact path= "/forgotPassword" element={<ForgotPassword/>} ></Route>
       <Route exact path= "/resetPassword/:token" element={<ResetPassword/>} ></Route>
       <Route exact path= "/dashboard" element={<Dashboard/>} ></Route>
-      <Route exact path= "/navbar" element={<Navbar/>} ></Route>
       
       
       
