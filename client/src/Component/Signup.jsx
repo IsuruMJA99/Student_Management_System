@@ -45,11 +45,12 @@ const Signup = () => {
 
           <div className="mb-5">
             <label htmlFor="name" className="block font-bold">
-              Name
+              User Name
             </label>
             <input
               type="text"
-              placeholder="Enter Name"
+              required={true}
+              placeholder="Enter Username"
               autoComplete="off"
               name="name"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg"
@@ -63,6 +64,7 @@ const Signup = () => {
             </label>
             <input
               type="email"
+              required={true}
               placeholder="Enter Email"
               autoComplete="off"
               name="email"
@@ -77,6 +79,7 @@ const Signup = () => {
             </label>
             <input
               type="password"
+              required={true}
               placeholder="Enter Password"
               autoComplete="off"
               name="password"

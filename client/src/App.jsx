@@ -13,8 +13,8 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route exact path= "/" element={<Home/>} ></Route>
-      <Route exact path= "/signup" element={<Signup/>} ></Route>
+    <Route exact path= "/home" element={<Home/>} ></Route>
+      <Route exact path= "/" element={<Signup/>} ></Route>
       <Route exact path= "/login" element={<Login/>} ></Route>
       <Route exact path= "/forgotPassword" element={<ForgotPassword/>} ></Route>
       <Route exact path= "/resetPassword/:token" element={<ResetPassword/>} ></Route>
