@@ -6,6 +6,9 @@ import ForgotPassword from './Component/ForgotPassword'
 import ResetPassword from './Component/ResetPassword'
 import Dashboard from './Component/Dashboard'
 import Navbar from './Component/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import CreateUser from './Component/CreateUser'
+import UpdateUser from './Component/UpdateUser'
 
 
 function App() {
@@ -13,7 +16,10 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route exact path= "/home" element={<Home/>} ></Route>
+      <Route exact path= "/home" element={<Home/>} ></Route>
+      <Route exact path= "/create" element={<CreateUser/>} ></Route>
+      <Route exact path= "/update" element={<UpdateUser/>} ></Route>
+
       <Route exact path= "/" element={<Signup/>} ></Route>
       <Route exact path= "/login" element={<Login/>} ></Route>
       <Route exact path= "/forgotPassword" element={<ForgotPassword/>} ></Route>

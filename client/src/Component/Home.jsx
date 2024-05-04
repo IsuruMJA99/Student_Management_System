@@ -22,20 +22,9 @@ function Home () {
       });
   }, []);
 
-  // const handleLogout = () => {
-  //   axios.get('http://localhost:3000/auth/logout')
-  //     .then(res => {
-  //       if (res.data.status) {
-  //         navigate('/login');
-  //       }
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // };
 
   if (!authenticated) {
-    return null; // or loading spinner or message
+    return null; 
   }
 
   return (
