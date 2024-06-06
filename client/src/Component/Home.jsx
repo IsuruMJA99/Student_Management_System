@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Navigate, Link, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import CreateUser from './CreateUser';
+import User from './User';
 
 function Home () {
   const navigate = useNavigate();
@@ -30,6 +32,8 @@ function Home () {
   return (
 <>
     <Navbar/>
+    <User/>
+    <CreateUser/>
     <div>
       Home<br/>
       
