@@ -4,7 +4,7 @@ import Login from './Component/Login'
 import Home from './Component/Home'
 import ForgotPassword from './Component/ForgotPassword'
 import ResetPassword from './Component/ResetPassword'
-import Dashboard from './Component/Dashboard'
+// import Dashboard from './Component/Dashboard'
 import Navbar from './Component/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CreateUser from './Component/CreateUser'
@@ -24,7 +24,7 @@ function App() {
       <Route exact path= "/login" element={<Login/>} ></Route>
       <Route exact path= "/forgotPassword" element={<ForgotPassword/>} ></Route>
       <Route exact path= "/resetPassword/:token" element={<ResetPassword/>} ></Route>
-      <Route exact path= "/dashboard" element={<Dashboard/>} ></Route>
+       {/* <Route exact path= "/dashboard" element={<Dashboard/>} ></Route> */}
       <Route exact path= "/navbar" element={<Navbar/>} ></Route>
       
       

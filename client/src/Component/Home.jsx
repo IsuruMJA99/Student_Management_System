@@ -33,8 +33,8 @@ function Home () {
     <div>
       Home<br/>
       
-      <button className="w-full py-2 text-white bg-green-500 rounded-lg cursor-pointer hover:bg-green-700"> <Link to="/dashboard" > Dashboard</Link></button>
-      <br/><br/>
+       {/* <button className="w-full py-2 text-white bg-green-500 rounded-lg cursor-pointer hover:bg-green-700"> <Link to="/dashboard" > Dashboard</Link></button>
+      <br/><br/> */}
       {/* <button onClick={handleLogout} className="w-full py-2 text-white bg-green-500 rounded-lg cursor-pointer hover:bg-green-700">Logout</button> */}
     </div>
     </>
