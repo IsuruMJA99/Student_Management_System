@@ -9,7 +9,6 @@ import Navbar from './Component/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CreateUser from './Component/CreateUser'
 import UpdateUser from './Component/UpdateUser'
-import User from './Component/User'
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route exact path= "/home" element={<Home/>} ></Route>
-      <Route exact path= "/user" element={<User/>} ></Route>
       <Route exact path= "/create" element={<CreateUser/>} ></Route>
       <Route exact path= "/update" element={<UpdateUser/>} ></Route>
 
@@ -28,7 +26,6 @@ function App() {
       <Route exact path= "/resetPassword/:token" element={<ResetPassword/>} ></Route>
        {/* <Route exact path= "/dashboard" element={<Dashboard/>} ></Route> */}
       <Route exact path= "/navbar" element={<Navbar/>} ></Route>
-   
       
       
       
